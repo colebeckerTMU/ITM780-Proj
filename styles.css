@@ -3,10 +3,6 @@ html, body{
     padding:0;
 }
 
-a:link{
-    color: #ffffff;
-}
-
 a:visited{
     color: black;
 }
