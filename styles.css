@@ -223,6 +223,10 @@ li{
     color:#0077c8;
 }
 
+#accessibility{
+    margin-left: 5%;
+    font-size: 10pt;
+}
 
 
 @media (max-width:1050px) { /* establishing support for smaller browsers*/
