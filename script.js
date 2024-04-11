@@ -1,19 +1,19 @@
-window.onscroll = function() {headScroll()};
+function downloadFile(url){
+  var link = document.createElement("a")
+  link.href = url;
+  link.click()
+  link.remove();
+}
 
-var header = document.getElementById("header");
-
-var sticky = header.offsetTop;
-
-function headScroll() {
-  if (document.documentElement.scrollTop > sticky) {
-    header.classList.add("scroll");
-  } else {
-    header.classList.remove("scroll");
+function resumeWarn(){
+  if(window.confirm("Are you sure you wish to download this file?")==true){
+    downloadFile('Resume Updated.docx');
+    document.getElementById("resumeLink").innerHTML = "Thank you!";
+  }
+    else{
   }
 }
 
-window.onclick = function() {resumeWarn()};
-
-function resumeWarn(){
-  window.alert("Are you sure you wish to download this file?");
+function headshot(){
+  document.getElementById("headshot").innerHTML();
 }

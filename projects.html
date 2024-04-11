@@ -1,26 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
+
 <head>
+    <title>Special Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Special Projects page for Cole Becker's personal and professional career.">
+    <meta name="keywords" content="Python,SQL,Microsoft Office,Excel,HTML,CSS,JavaScript">
+    <meta name="author" content="Cole Becker">
+    <script text="Text/JavaScript" src="script.js"></script>
+</head>
+
+<body>
     <div class="header" id="header">
         <a href="index.html">Home</a>
-        <a href="Resume Updated.docx" target="_blank">[Download my Resume]</a>
-        <a href="#">Special Projects</a>
-        <a href="#">In Development</a>
+        <a href="projects.html">Special Projects</a>       
+        <a id="resumeLink" onclick="resumeWarn()">[Download my Resume]</a>
+        <div class="dd">
+            <button class = "ddButton">Where to Find Me</button>
+            <div class = "ddContent">
+                <a href="https://www.linkedin.com/in/cole-becker-607972194/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/wcolebecker/" target="_blank">Instagram</a>
+                <a>Email Me at: Cole.Becker@torontomu.ca</a>
+            </div>
+        </div>
     </div>
-</head>
-<h1>Work in Progress</h1>
-<div class="bimage">
-    <img src="kitzbuhel.jpg" alt="The Austrian Alps in landscape view with snowy peaks">
-    <div id="title">William (Cole) Becker</div>
-    <div id="spec">
-        <p>Data Analytics | <a href="https://www.torontomu.ca/bachelor-of-commerce/programs/business-technology-management/"
-            target="_blank"> Business Technology Management (BTM) </a> | University Athlete</p>
+    <div class="bimage">
+        <img src="kitzbuhel.jpg" alt="The Austrian Alps in landscape view with snowy peaks">
+        <div id="title">William (Cole) Becker</div>
+        <div id="spec">
+            <p>Data Analytics | <a href="https://www.torontomu.ca/bachelor-of-commerce/programs/business-technology-management/"
+                target="_blank"> Business Technology Management (BTM) </a> | University Athlete</p>
+        </div>
+        <p class="photoCredit">I took this photo during reading week</p>
+        <div id="fade"></div>
     </div>
-    <p class="photoCredit">I took this photo during reading week</p>
-    <div id="fade"></div>
+    
+<div class="supermain" id="three">
+    <div class = "specialProject">
+        <div class="sDiv">
+            <h2> Consumer Pricing Index - Shoppers Drug Mart</h2>
+            <p class="indent">In the Consumer Pricing Index project at Shoppers Drug Mart, I spearheaded the development of a comprehensive solution aimed at accurately 
+                averaging the consumer price of medicine in various locations. This initiative was pivotal for upper management, providing them with a nuanced understanding of 
+                pricing dynamics within the geographical and pharmaceutical domain. Leveraging advanced statistical methodologies, we crafted a robust model capable of capturing 
+                pricing variations across different categories of medication at the different pharmacies across Canada. One of the key features of our solution was its flexibility, allowing upper 
+                management to access and interact with the model at varying levels of granularity. This granular view empowered decision-makers to delve 
+                deeper into specific product segments or zoom out to analyze broader pricing trends, enabling them to make informed strategic decisions with 
+                confidence. Through collaborative efforts and meticulous data analysis, we were able to streamline the process of price evaluation and optimization, 
+                ensuring competitive pricing strategies aligned with market dynamics and customer demands.
+            <br><br><strong>Skills Developed:</strong> Python, SQL, Microsoft Excel, Problem Solving, Big Data Analytics, Data Cleaning & Preprocessing</p>
+        </div>
+        <div class="logo"><img src="shoppers.png" alt="Shoppers Drug Mart Logo"></div>
+    </div>
 
+    <div class = "specialProject">
+        <div class="sDiv">
+            <h2> Real Estate Analytics - TMU</h2>
+            <p class="indent">
+            I was tasked with analyzing real estate metrics leveraging IBM's SPSS quantitative tool. This enabled me to gain valuable insights into market trends, property values, and investment opportunities. 
+            By leveraging SPSS's user-friendly interface and robust statistical algorithms, I explored the dataset we were given for this project, identified influential factors such as location and amenities 
+            on property prices, and conducted spatial analyses to uncover geographic patterns and hotspots of real estate activity. SPSS supports market segmentation and predictive modeling 
+            techniques, enabling targeted marketing strategies, forecasting of future trends, and mitigating of risk. This project helped to develop my understanding of real estate markets and statistical analysis.
+            <br><br><strong>Skills Developed:</strong> SPSS, Microsoft Excel, Problem Solving, Data Analysis</p>
+        </div>
+        <div class="logo"><img src="tmu.jpg" alt="Toronto Metropolitan University Logo"></div>
+    </div>
+    <div class = "specialProject">
+        <div class="sDiv">
+        <h2> Machine Learning Development - TMU</h2>
+        <p class="indent">In the realm of Machine Learning Development, I was tasked with creating neural network designed for the identification of cancer cells. Given sample 
+            data I embarked on the task of building a robust predictive model. Drawing upon state-of-the-art machine learning algorithms and techniques, 
+            I meticulously curated and preprocessed vast amounts of multidimensional data, including genetic markers and cellular attributes. Through iterative experimentation and rigorous 
+            model refinement, we achieved remarkable accuracy in distinguishing malignant cells from benign ones, laying the groundwork for early detection and intervention 
+            in cancer patients. Leveraging the power of deep learning, my model was able to distinguish the two types of cells using five inputs and three hidden layers. Each layer consisted
+            of fifteen nodes. 
+            <br><br><strong>Skills Developed:</strong> Python, PyTorch, Machine Learning, Data Cleaning & Preprocessing</p>
+        </div>
+        <div class="logo"><img src="tmu.jpg" alt="Toronto Metropolitan University Logo"></div>
+    </div>
+    <div class = "specialProject">
+        <div class="sDiv">
+            <h2> Retroactive Quantitative Analytics - Samsung</h2>
+            <p class="indent"> Undertaking Retroactive Quantitative Analytics at Samsung, I embarked on a comprehensive analysis of the price-performance dynamics within the realm of home 
+                electronics. Delving into the vast collection of televisions and other consumer electronics, I meticulously analyzed historical data to discern intricate patterns and correlations. 
+                By leveraging advanced statistical methodologies and predictive modeling techniques, I unearthed invaluable insights regarding future performance, quantity dynamics, and pricing 
+                strategies. Armed with this actionable intelligence, Samsung was empowered to make data-driven decisions pertaining to inventory management, product positioning, and pricing optimization. 
+                Our retrospective analysis not only shed light on past trends but also served as a guiding beacon for strategic foresight, enabling Samsung to stay ahead of the curve in a rapidly 
+                evolving market landscape. Additionally, during this process I was asked to present my findings to the head of the Home Electronics department at Samsung. This tested my ability to 
+                perform under pressure and present my findings in a clear and concise manner.
+                <br><br><strong>Skills Developed:</strong> Microsoft Excel, Microsoft Office, Data Analytics, Public Speaking, Presentation Ability</p>
+            </div>
+        <div class="logo"><img src="samsung.png" alt="Samsung Electronics Canada Logo"></div>
+    </div>
+    <div class = "specialProject">
+        <div class="sDiv">
+            <h2> Personal Portfolio WebPage - TMU</h2>
+            <p class="indent"> Crafting my Personal Portfolio Webpage required blending creativity with technical proficiency to showcase my professional journey and 
+                accomplishments. Harnessing the power of HTML, CSS, and JavaScript, I set out to design a visually captivating and user-friendly interface that would 
+                encapsulate my personality and career trajectory. I curated content that succinctly highlights my skills, experiences, and 
+                achievements, ensuring a compelling narrative that resonated with prospective employers and recruiters. Visitors are afforded a glimpse into my professional 
+                ethos and creative prowess, fostering engagement and meaningful connections. From elegant design layouts to responsive functionalities, every aspect of 
+                the webpage was designed to leave a lasting impression and underscore my commitment to excellence in every endeavor.
+            <br><br><strong>Skills Developed</strong> HTML, CSS, JavaScript, Problem Solving, Design & Creativity</p>
+        </div>
+        <div class="logo"><img src="tmu.jpg" alt="Toronto Metropolitan University Logo"></div>
+    </div>
 </div>
-<body>
+
+
+<footer>
+    <div class="footer"></div>
+</footer>
+
 </body>
 </html>

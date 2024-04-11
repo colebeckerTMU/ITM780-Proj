@@ -2,20 +2,29 @@
 <html lang = "en">
 
 <head>
-    <title>Homepage</title>
+    <title>Professional Portfolio - Homepage</title>
     <link rel="stylesheet" href="styles.css">
-    <!--<script type="text/javascript" src="script.js"></script> Not currently in use-->
-    <div class="header" id="header">
-        <a href="index.html">Home</a>
-        <a href="Resume Updated.docx" target="_blank">[Download my Resume]</a>
-        <a href="projects.html">Special Projects</a>
-        <a href="#">In Development</a>
-    </div>
-    <style>
-    </style>
+    <meta name="description" content="Professional portfolio for established data analyst and technology professional Cole Becker. 
+    Keen interest in entrepreneurship and personal development.">
+    <meta name="keywords" content="Python,SQL,Microsoft Office,Excel,HTML,CSS,JavaScript">
+    <meta name="author" content="Cole Becker">
+    <script text="Text/JavaScript" src="script.js"></script>
 </head>
 
 <body>
+    <div class="header" id="header">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Special Projects</a>       
+        <a id="resumeLink" onclick="resumeWarn()">[Download my Resume]</a>
+        <div class="dd">
+            <button class = "ddButton">Where to Find Me</button>
+            <div class = "ddContent">
+                <a href="https://www.linkedin.com/in/cole-becker-607972194/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/wcolebecker/" target="_blank">Instagram</a>
+                <a id="email">Email Me at: Cole.Becker@torontomu.ca</a>
+            </div>
+        </div>
+    </div>
     <div class="bimage">
         <img src="kitzbuhel.jpg" alt="The Austrian Alps in landscape view with snowy peaks">
         <div id="title">William (Cole) Becker</div>
@@ -26,16 +35,8 @@
         <p class="photoCredit">I took this photo during reading week</p>
         <div id="fade"></div>
     </div>
-    <div id="accessibility">
-        <p>Accessibility Settings:</p>
-        <a href= ”javascript:void(0);” onclick = "javascript:body.style.fontSize='.5em'"><span
-            style= "font-size: xx-small;">Small</span></a>
-        <a href= ”javascript:void(0);” onclick = "javascript:body.style.fontSize='1em'"><span
-            style= "font-size: medium;">Medium</span></a>
-        <a href= ”javascript:void(0);” onclick = "javascript:body.style.fontSize='1.5em'"><span
-            style= "font-size: x-large;">Large</span></a>
-    </div>
-<div class="supermain">
+    
+<div class="supermain" id="one">
     <div class="main">
         <div class="maincontent">
             <h2 class="mainTitle">About Me</h2>
@@ -44,21 +45,56 @@
                 Some of my professional experience is highlighted below:
             <ul class="listfix">
                 <li>Heavily interested in technology.</li><br>
-                <li>Performed data analytics at Samsung, Shoppers Drugmart, and Moneris.</li><br>
+                <li>Performed data analytics at Samsung Electronics Canada, Shoppers Drugmart, and Moneris Payment Solutions.</li><br>
                 <li>Proficient in Excel, Python, and SQL. Currently Learning HTML, CSS and JS.</li><br>
-                <li>Captain of the TMU Mens Ultimate Frisbee Team.</li><br>
-                <li>"Becuase perfection is impossible, we are unrestricted on improvement"</li>
+                <li>Captain of TMU's Mens Ultimate Frisbee Team.</li><br>
+                <li>"Becuase perfection is impossible, we can forever improve."</li>
             </ul>
             </p>
         </div>
-        <img src="headshot.jpeg" id="headshot" alt="Cole Becker in a button up dress shirt smiling">
+        <img src="headshot.jpeg" id="headshot" alt="Cole Becker in a black button up dress shirt smiling" onclick="headshot()">
       </div>
     <div class="main">
         <div class="content2">
-            <h2 class="mainTitle">Where do we go from here?</h2>
-            <img src="newsroom-moores-law-2.jpg" id="img2" alt="Moores law showing the doubling of transistors every thirty years">
-            <p id="intelImg">This was taken from Intel's website, it is a placeholder</p>
-        </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img id="img2" src="in_demand_skills.png" alt="LinkedIn Learning's Top 10 most in-demand skills of 2024. In Order they read
+                      Communication, Customer Service, Leadership, Project Management, Management, Analytics, Teamwork, Sales, Problem-Solving, 
+                      Research. Top Skill at the moment: Adaptability.">
+                      <p id="img2credit">(The Most In-Demand Skills of 2024 | Dan Brodnitz, LinkedIn, 2024)</p>
+                      <p id="Img2Desc">Hover over the image to find out how I am developing these skills</p>
+                    </div>
+                    <div class="flip-card-back">
+                      <h1>Most in Demand Skills</h1>
+                      <ol class="flipContent"> 
+                        <li><strong>Communication:</strong> Through consistent communication with others during my personal and professional life I develop
+                        my ability to communicate effectively with others.</li>
+                        <li><strong>Customer Service:</strong> Consistently prioritizing the needs of my end user helps me stay focused on customer service 
+                        as I develop products or services.</li>
+                        <li><strong>Leadership:</strong> Using my expertise to guide others through tasks I have completed before, or assisting the thinking process
+                        on tasks we have yet to understand assists in my development of leadership skills.</li>
+                        <li><strong>Project Management:</strong> Through experience in product development and through managing projects I develop a comfort in handling
+                        problems that occur during the typical project lifecycle.</li>
+                        <li><strong>Management:</strong> Leveraging my learned knowledge of things helps me guide others on tasks where they require assistance. Always looking
+                        to learn from others helps me develop as a strong leader.</li>
+                        <li><strong>Analytics:</strong> Through my professional experience and personal interest I continue to develop my problem solving and
+                        quantiative analysis skill set.</li>
+                        <li><strong>Teamwork:</strong> Working with others in a professional manner but also through my hobbies playing Ultimate Frisbee allow me
+                        to better understand the sometimes competing needs of my teammates while we work towards a common goal</li>
+                        <li><strong>Sales:</strong> Through presenting my ideas in my professional career, in addition to consistently pitching my ideas to others
+                        has helped in developing my sales skills.</li>
+                        <li><strong>Problem-Solving:</strong> During my day to day life, I am constantly solving issues that may come up. Additionally while developing
+                        products or services I am faced with many problems that require solving, this helps me hone this skill.</li>
+                        <li><strong>Research:</strong> In order to create the things of my imagination I often require learning and developing my skills to match the problem set.
+                        To do so, I have to flex my research skills and develop them by doing so.</li>
+                        <li><strong>Adaptability:</strong> Whether it be personal or professional, in my life I am constantly finding new way to do things, develop myself,
+                        and transfer existing knowledge to other aspects of my life. Through doing so, I develop my Adaptability in all aspects.</li>
+                      </ol>
+                    </div>
+                  </div>
+            </div>
+        </div>   
     </div>
 </div>
 
@@ -68,47 +104,48 @@
         <p class="stext">Throughout my professional career, I have been responsible for the delivery of many initiatives
             that involved quantitative analysis. Below is a non-exhaustive list of some of the highlights:
         <ul class="listfix">
-            <li>At Samsung, I leveraged historical data to perform predictive analytics on the upcoming Q4 to determine product price and supply.</li>
-            <li>At Shoppers Drugmart, I combined a variety of data to create a consumer pricing index. This enabled management to efficiently
+            <li class="listContent">At Samsung, I leveraged historical data to perform predictive analytics on the upcoming Q4 to determine product price and supply.</li>
+            <li class="listContent">At Shoppers Drugmart, I combined a variety of data to create a consumer pricing index. This enabled management to efficiently
                 look at price in a given location or region at various levels of granularity.</li>
-            <li>At Moneris, I leveraged market research and insider information to determine trends in the ecommerce
+            <li class="listContent">At Moneris, I leveraged market research and insider information to determine trends in the ecommerce
                 space to prepare a report for the CEO at the time. </li>
         </ul>
+        <p class="stext">For more information on my professional career, check out the special projects page and consider downloading my <a onclick="resumeWarn()">[Resume]</a></p>
         </p>
     </div>
+
     <div class="skills" id="skMiddle">
         <h2 class="mainTitle">Business Solutions</h2>
         <p class="stext">
             As I learn and develop as a professional, I look to combine my experience across all of my roles to create the most value in whichever
-            present role I'm in.<br><br> Currently, I'm working towards adding automation into a traditional company. Leveraging machine learning, Python,
-            SQL, and a learned knowledge of APIs, I am helping to remove mundane processes and free up those who were once doing these activities. I have 
-            three goals for this project:
+            present role I'm in.<br><br> Currently, I'm working towards adding automation into a traditional company that hasn't integrated a large amount 
+            of information systems into their operations. Leveraging machine learning, Python, SQL, and a learned knowledge of APIs, I am helping to remove 
+            mundane processes and free up those who were once doing these activities. I have three goals for this project:
             <ul>
-                <li> Increase productivity for the organization. </li>
-                <li> Increase overall work satisfaction </li> 
-                <li> Develop my skills in the information systems consulting space.</li>
+                <li class="listContent"> Increase productivity for the organization. </li>
+                <li class="listContent"> Increase overall work satisfaction </li> 
+                <li class="listContent"> Develop my skills in the information systems consulting space.</li>
             </ul>
         </p>
     </div>
-        <div class="skills">
-            <h2 class="mainTitle">Entrepreneurial Indeavors</h2>
-            <p class="stext">
-                As the child of two entrepreneurs, I have been exposed to the idea of working for myself my entire life. This has not manifest itself in any
-                particular way. However, it has enabled me to move through life with a unique lens on things I learn, work on, and develop. I like the idea of
-                being able to develop my interests into projects or products that can be potentially financially viable.<br><br> More to come in this respect.
-            </p>
-        </div>
+
+    <div class="skills">
+        <h2 class="mainTitle">Entrepreneurial Indeavors</h2>
+        <p class="stext">
+            I have been exposed to the idea of working for myself my entire life. This has not manifest itself in any particular way. However, it has enabled
+            me to move through life with a unique lens on things I learn, work on, and develop. I like the idea of being able to develop my interests into 
+            projects or products that have potential to be financially viable. Some of these ideas are listed below:
+            <ul>
+                <li class="listContent">Leveraging carpentry resources available to me to create items that align with my interests (Pool Cues / Table, Office Desk, Dining Table..etc)</li>
+                <li class="listContent">Turning professional experience into products or services tailored to my industry.</li>
+                <li class="listContent">Creating content with respect to the above, developing a personal / professional brand through this medium.</li>
+            </ul>
+        </p>
     </div>
+</div>
 
 <footer>
-    <div class="footer">
-        <div class="footerdiv">
-            <br><a id="brokelink" href="https://www.linkedin.com/in/cole-becker-607972194/">LinkedIn</a>
-        </div>
-        <div class="footerdiv">
-            <p>Contact Me at: <a>cole.becker@torontomu.ca</a></p>
-        </div>
-    </div>
+    <div class="footer"></div>
 </footer>
 
 </body>
